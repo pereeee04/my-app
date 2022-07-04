@@ -3,8 +3,8 @@
   tools {
     maven 'maven new'
   }
-   tools {
-    git 'default'
+  tools {
+    git 'Default'
   }
    stages
   {
