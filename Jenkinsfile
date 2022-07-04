@@ -10,6 +10,5 @@
       steps{  
         sh "mvn clean package"
       }
-    }  
-  }  
-}
+    }   
+ }
