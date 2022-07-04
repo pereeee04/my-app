@@ -2,14 +2,14 @@
    agent any
    stages
   {
-    stage("scm checkout")
+    stage("SCM checkout")
     {
        steps
          {
          git credentialsId: 'pereeee04', url: 'https://github.com/pereeee04/my-app.git'
          }
      }
-    stage("maven build")
+    stage("Maven build")
      {
       steps
         {  
