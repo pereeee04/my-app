@@ -3,6 +3,9 @@
   tools {
     maven 'maven new'
   }
+  tools {
+    git 'Default' 
+  }
    stages
   {
     stage("Maven build")
