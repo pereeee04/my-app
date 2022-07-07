@@ -1,5 +1,5 @@
 @library("mylibs") 
-pipeline {
+pipeline{
    agent any
   tools {
     maven 'maven new'
