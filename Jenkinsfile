@@ -1,28 +1,9 @@
-@library("mylibs") 
 pipeline{
    agent any
-  tools {
-    maven 'maven new'
-  }
-   stages
-  {
-    stage("Maven build")
-     {
-      steps
-        {  
-        sh "mvn clean package"
-         }
-      }
-    stage("deploy to dev")
+   stages{
+   stage("SCM Checkout")
       steps{
-         tomcatDeploy("tomcat-dev","ec2-user","172.31.1.232")
-      
-        }
+         git credentialsId: 'git-creds', url: 'https://github.com/javahometech/my-app.git'
       }
-    }
-} 
-
-
-
-
-  
+   }
+}
